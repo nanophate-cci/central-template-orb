@@ -1,0 +1,12 @@
+version: 2.1
+
+jobs:
+  custom-test:
+    docker:
+      - image: cimg/base:current
+    resource_class: small
+
+    steps:
+      - checkout
+      - run: "hello this is from central-template-orb"
+      - run: "hoooa"
