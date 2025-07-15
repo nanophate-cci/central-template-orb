@@ -1,5 +1,10 @@
 version: 2.1
 
+commands:
+  sayhello:
+    steps:
+      - run: echo "Hello from say hello"
+
 jobs:
   custom-test:
     docker:
@@ -8,5 +13,5 @@ jobs:
 
     steps:
       - checkout
-      - run: "hello this is from central-template-orb"
-      - run: "hoooa"
+      - run: echo "hello this is from central-template-orb"
+      - run: echo "hoooa"
