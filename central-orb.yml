@@ -3,7 +3,7 @@ version: 2.1
 commands:
   sayhello:
     steps:
-      - run: echo "Hello from say hello"
+      - run: echo "hello this is from central-template-orb"
 
 jobs:
   custom-test:
